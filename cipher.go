@@ -28,6 +28,9 @@ var aeadList = map[string]struct {
 	"aes-192-gcm-16":         {24, sscipher.AESGCM16},
 	"aes-256-gcm-16":         {32, sscipher.AESGCM16},
 	"chacha20-ietf-poly1305": {32, sscipher.Chacha20IETFPoly1305},
+	"aes-siv-256":            {32, sscipher.AESSIV},
+	"aes-siv-384":            {48, sscipher.AESSIV},
+	"aes-siv-512":            {64, sscipher.AESSIV},
 }
 
 // List of stream ciphers: key size in bytes and constructor
